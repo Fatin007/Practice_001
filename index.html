@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="prism.css"/>
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
+                
+  <title>Practice_001</title>
+</head>
+<body class="text-light">
+<div class="container-fluid">
+    
+    <div class="flexbox headline">
+      <h1 class="text-center">Practice_001 Editorial.</h1>
+    </div>
+  
+  <!-- A -->
+  <div class="py-3 container box" class="box">
+      <h4 class="text-left text-bold ">A - Are You a Robot?</h4>
+      <p class="text-left">
+        You just need to output the word security that is distorted in the image.
+      </p><br>
+      
+      <div class="button">
+         <button type="button" class="btn text-info mb-4" class="details" data-bs-toggle="modal" data-bs-target="#firstModal"><strong>Click here to see the solution!</strong></button>
+      </div>
+      <!-- Modal -->
+  <div class="modal " id="firstModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content text-light">
+        <div class="modal-body details-body">
+            <div class="fix">
+                <h1 class="mo-head">A - Are You a Robot?</h1>
+            </div>
+            
+            <div class="mb-4 spacee">
+                    <p class="output">Code:</p>
+                    <div class="code">
+                        <pre>
+                            <code class="language-c">
+#include &#x3C;stdio.h&#x3E;
+int main()
+{
+   printf("security");
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <!-- <p class="output">Explaination:<br>
+                      It is what it is:3
+                    </p> -->
+                    
+            </div>
+            
+            
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-danger close"  data-bs-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div> 
+  <div class="gap"></div>
+  
+  <!-- B -->
+  <div class="py-3 container box" class="box">
+    <h4 class="text-left text-bold ">B - Picnic Chaos !!</h4>
+    <p class="text-left">
+        This problem has a number of solutios. First calculate sum from 1 to n (1+2+...+n). Then take input and substract it from sum. after all step remaining sum will be the missing ID number.
+    </p><br>
+    
+    <div class="button">
+       <button type="button" class="btn text-info mb-4" class="details" data-bs-toggle="modal" data-bs-target="#secModal"><strong>Click here to see the solution!</strong></button>
+    </div>
+    <!-- Modal -->
+<div class="modal " id="secModal" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content text-light">
+      <div class="modal-body details-body">
+          <div class="fix">
+              <h1 class="mo-head">B - Picnic Chaos!!</h1>
+          </div>
+          
+          <div class="mb-4 spacee">
+                  <p class="output">Code:</p>
+                  <div class="code">
+                      <pre>
+                          <code class="language-c">
+#include &#x3C;stdio.h&#x3E;
+int main()
+{
+   int n, x, sum = 0;
+   scanf("%d", &n);
+   for (int i = 1; i <= n; i++)
+   {
+      sum += i;
+   }
+   for (int i = 0; i < n-1; i++)
+   {
+      scanf("%d", &x);
+      sum -= x;
+   }
+   printf("%d", sum);
+}
+                          </code>
+                      </pre>
+                  </div>
+                  <p class="output">Explaination:<br>
+                    The first loop calculates the sum of numbers from 1 to 'n.' The second loop subtracts the input numbers, and the remaining sum is the missing number. 
+                  </p>
+                  
+          </div>
+          
+          
+      </div>
+      <div class="">
+        <button type="button" class="btn btn-danger close"  data-bs-dismiss="modal">Close</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div> 
+  <div class="gap"></div>
+
+  <!-- C -->
+  <div class="py-3 container box" class="box">
+    <h4 class="text-left text-bold ">C - !Easy Math? </h4>
+    <p class="text-left">
+      You've to write a simple program to calculate factorial for T testcases. Here edge case if factorial of zero! 
+    </p><br>
+    
+    <div class="button">
+       <button type="button" class="btn text-info mb-4" class="details" data-bs-toggle="modal" data-bs-target="#cModal"><strong>Click here to see the solution!</strong></button>
+    </div>
+    <!-- Modal -->
+<div class="modal " id="cModal" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content text-light">
+      <div class="modal-body details-body">
+          <div class="fix">
+              <h1 class="mo-head">C - !Easy Math? </h1>
+          </div>
+          
+          <div class="mb-4 spacee">
+                  <p class="output">Code:</p>
+                  <div class="code">
+                      <pre>
+                          <code class="language-c">
+#include &#x3C;stdio.h&#x3E;
+int main()
+{
+   int t;
+   scanf("%d", &t);
+   while (t--)
+   {
+      int n;
+      long long fact = 1;
+      scanf("%d", &n);
+      if (n == 0)
+      {
+         printf("1\n");
+         continue;
+      }
+      for (int i = 1; i <= n; i++)
+      {
+         fact *= i;
+      }
+      printf("%lld\n", fact);
+   }
+}
+                          </code>
+                      </pre>
+                  </div>
+                  <!-- <p class="output">Explaination:<br>
+                    
+                  </p> -->
+                  
+          </div>  
+          
+          
+      </div>
+      <div class="">
+        <button type="button" class="btn btn-danger close"  data-bs-dismiss="modal">Close</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div> 
+  <div class="gap"></div>
+
+  <!-- D -->
+  <div class="py-3 container box" class="box">
+    <h4 class="text-left text-bold ">D - Help Abir</h4>
+    <p class="text-left">
+      One way to solve the problem is to check if the sum of any two numbers from these three numbers is greater than or equal to 10. If that condition is met, the output will be 'YES'; otherwise, the output will be 'NO'.
+    </p><br>
+    
+    <div class="button">
+      <button type="button" class="btn text-info mb-4" class="details" data-bs-toggle="modal" data-bs-target="#dModal"><strong>Click here to see the solution!</strong></button>
+    </div>
+    <!-- Modal -->
+    <div class="modal " id="dModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content text-light">
+          <div class="modal-body details-body">
+            <div class="fix">
+              <h1 class="mo-head">D - Help Abir</h1>
+            </div>
+            
+            <div class="mb-4 spacee">
+              <p class="output">Code:</p>
+              <div class="code">
+                <pre>
+                  <code class="language-c">
+#include &#x3C;stdio.h&#x3E;
+int main()
+{
+  int t;
+  scanf("%d", &t);
+  while (t--)
+  {
+    int a, b, c;
+    scanf("%d%d%d", &a, &b, &c);
+    if (a + b >= 10 || b + c >= 10 || c + a >= 10)
+    printf("YES\n");
+    else
+    printf("NO\n");
+  }
+}
+                  </code>
+                </pre>
+              </div>
+              <!-- <p class="output">Explaination:<br>
+
+                </p> -->
+                
+              </div>  
+              
+              
+            </div>
+            <div class="">
+              <button type="button" class="btn btn-danger close"  data-bs-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="gap"></div>
+
+    <!-- E -->
+    <div class="py-3 container box" class="box">
+      <h4 class="text-left text-bold ">E - Salamiii🤑</h4>
+      <p class="text-left">
+        This problem can be solved using a greedy approach. You need to choose larger notes before smaller ones progressively. This problem is similar to a program that converts n days into years, months, and days.
+      </p><br>
+      
+      <div class="button">
+         <button type="button" class="btn text-info mb-4" class="details" data-bs-toggle="modal" data-bs-target="#eModal"><strong>Click here to see the solution!</strong></button>
+      </div>
+      <!-- Modal -->
+  <div class="modal " id="eModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content text-light">
+        <div class="modal-body details-body">
+            <div class="fix">
+                <h1 class="mo-head">E - Salamiii🤑</h1>
+            </div>
+            
+            <div class="mb-4 spacee">
+                    <p class="output">Code:</p>
+                    <div class="code">
+                        <pre>
+                            <code class="language-c">
+#include &#x3C;stdio.h&#x3E;
+int main()
+{
+    int t;
+    scanf("%d", &t);
+    while (t--)
+    {
+      int n, count = 0;
+      scanf("%d", &n);
+      count += n / 100;
+      n %= 100;
+      count += n / 50;
+      n %= 50;
+      count += n / 10;
+      n %= 10;
+      count += n / 5;
+      n %= 5;
+      count += n / 2;
+      n %= 2;
+      count += n;
+      printf("%d\n", count);
+    }
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <p class="output">Explaination:<br>
+                      First, I checked how many 100 Taka notes I can choose by dividing 'n' by 100 and adding the result to a 'count' variable. Then, I calculated the remaining money using 'n %= 100,' which is equivalent to 'n = n % 100.' I followed the same process for 50 Taka, 10 Taka, 5 Taka, and 2 Taka notes, respectively.</p>
+                    
+            </div>  
+            
+            
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-danger close"  data-bs-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div> 
+    <div class="gap"></div>
+
+    <!-- F -->
+    <div class="py-3 container box" class="box">
+      <h4 class="text-left text-bold ">F - Reverse</h4>
+      <p class="text-left">
+        Here's another simple program that reverses an integer, and you've to write it for multiple test cases.
+      </p><br>
+      
+      <div class="button">
+         <button type="button" class="btn text-info mb-4" class="details" data-bs-toggle="modal" data-bs-target="#fModal"><strong>Click here to see the solution!</strong></button>
+      </div>
+      <!-- Modal -->
+  <div class="modal " id="fModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content text-light">
+        <div class="modal-body details-body">
+            <div class="fix">
+                <h1 class="mo-head">F - Reverse</h1>
+            </div>
+            
+            <div class="mb-4 spacee">
+                    <p class="output">Code:</p>
+                    <div class="code">
+                        <pre>
+                            <code class="language-c">
+#include &#x3C;stdio.h&#x3E;
+int main()
+{
+   int t;
+   scanf("%d", &t);
+   while (t--)
+   {
+      int n, rem, rev = 0;
+      scanf("%d", &n);
+      while (n)
+      {
+         rem = n % 10;
+         rev = rev * 10 + rem;
+         n /= 10;
+      }
+      printf("%d\n", rev);
+   }
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <!-- <p class="output">Explaination:<br>
+                      It is what it is:3</p> -->
+                    
+            </div>  
+            
+            
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-danger close"  data-bs-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div> 
+    <div class="gap"></div>
+
+    <!-- G -->
+    <div class="py-3 container box" class="box">
+      <h4 class="text-left text-bold ">G - Hote chao??</h4>
+      <p class="text-left">
+        Again another easy problem!<br>
+        Write a program to calculate sum of digits for multiple testcases.
+      </p><br>
+      
+      <div class="button">
+         <button type="button" class="btn text-info mb-4" class="details" data-bs-toggle="modal" data-bs-target="#gModal"><strong>Click here to see the solution!</strong></button>
+      </div>
+      <!-- Modal -->
+  <div class="modal " id="gModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content text-light">
+        <div class="modal-body details-body">
+            <div class="fix">
+                <h1 class="mo-head">G - Hote chao??</h1>
+            </div>
+            
+            <div class="mb-4 spacee">
+                    <p class="output">Code:</p>
+                    <div class="code">
+                        <pre>
+                            <code class="language-c">
+#include &#x3C;stdio.h&#x3E;
+int main()
+{
+   int t;
+   scanf("%d", &t);
+   while (t--)
+   {
+      int n, sum = 0;
+      scanf("%d", &n);
+      while (n>0)
+      {
+         sum += n % 10;
+         n /= 10;
+      }
+      printf("%d\n", sum);
+   }
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <p class="output">Explaination:<br>
+                      I initialized a sum variable to store the sum of digits. In each step inside the while loop, I added the last digit to the sum, and then removed the last digit by dividing it by 10. The loop terminates when 'n' becomes zero.</p>
+                    
+            </div>  
+            
+            
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-danger close"  data-bs-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div> 
+    <div class="gap"></div>
+
+    <!-- H -->
+    <div class="py-3 container box" class="box">
+      <h4 class="text-left text-bold ">H - Noshto lift:"'</h4>
+      <p class="text-left">
+        This problem has many solutions. Here is a mathematical approach to solve it.<br>
+        Let the last digit be 'last.' Then, our character pressed each digit before the last digit exactly 10 times (1+2+3+4). The number of times he pressed the last digit depends on the length of the number. So, the final answer is <br>(last-1)*10+length*(length+1)/2.
+      </p><br>
+      
+      <div class="button">
+         <button type="button" class="btn text-info mb-4" class="details" data-bs-toggle="modal" data-bs-target="#hModal"><strong>Click here to see the solution!</strong></button>
+      </div>
+      <!-- Modal -->
+  <div class="modal " id="hModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content text-light">
+        <div class="modal-body details-body">
+            <div class="fix">
+                <h1 class="mo-head">H - Noshto lift:"'</h1>
+            </div>
+            
+            <div class="mb-4 spacee">
+                    <p class="output">Code:</p>
+                    <div class="code">
+                        <pre>
+                            <code class="language-c">
+#include &#x3C;stdio.h&#x3E;
+#include &#x3C;math.h&#x3E;
+int main()
+{
+   int t;
+   scanf("%d", &t);
+   while (t--)
+   {
+      int n, sum = 0, last, length;
+      scanf("%d", &n);
+      last = n % 10;
+      length = 1 + log10(n);
+      sum = (last - 1) * 10 + (length * (length + 1) / 2);
+      printf("%d\n", sum);
+   }
+}                            </code>
+                        </pre>
+                    </div>
+                    <p class="output">Explaination:<br>
+                      Here, <span class="text-success">1+log10(n)</span> is the shortcut formula to get length of number of digits of a number. </p>
+                    
+            </div>  
+            
+            
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-danger close"  data-bs-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div> 
+    <div class="gap"></div>
+    
+    <!-- I -->
+    <div class="py-3 container box" class="box">
+      <h4 class="text-left text-bold ">I - The marathon</h4>
+      <p class="text-left">
+        We can rephrase the problem to count the numbers from 'j,' 'a,' and 't' that are larger than 's.' One way to accomplish this is by maintaining a variable that increments each time we use an 'if' statement to check if a number is greater than 's'.
+      </p><br>
+      
+      <div class="button">
+         <button type="button" class="btn text-info mb-4" class="details" data-bs-toggle="modal" data-bs-target="#iModal"><strong>Click here to see the solution!</strong></button>
+      </div>
+      <!-- Modal -->
+  <div class="modal " id="iModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content text-light">
+        <div class="modal-body details-body">
+            <div class="fix">
+                <h1 class="mo-head">I - The marathon</h1>
+            </div>
+            
+            <div class="mb-4 spacee">
+                    <p class="output">Code:</p>
+                    <div class="code">
+                        <pre>
+                            <code class="language-c">
+#include &#x3C;stdio.h&#x3E;
+int main()
+{
+   int t;
+   scanf("%d", &t);
+   while (t--)
+   {
+      int s, j, a, t, count = 0;
+      scanf("%d%d%d%d", &s, &j, &a, &t);
+      if (s < j) count++;
+      if (s < a) count++;
+      if (s < t) count++;
+      printf("%d\n", count);
+   }
+}                        </code>
+                        </pre>
+                    </div>
+                    <!-- <p class="output">Explaination:<br>
+                      It is what it is:3</p> -->
+                    
+            </div>  
+            
+            
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-danger close"  data-bs-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div> 
+    <div class="gap"></div>
+    
+    <!-- J -->
+    <div class="py-3 container box" class="box">
+      <h4 class="text-left text-bold ">J - A Variety of Operations</h4>
+      <p class="text-left">
+        If you closely observe the problem, you will identify four conditions:
+        <ol>
+          <li>If 'c - d' is even, the output will be -1.</li>
+          <li>If 'c' and 'd' are both equal to 0, the answer is 0.</li>
+          <li>If 'c' is equal to 'd,' the answer is 1.</li>
+          <li>Otherwise, the answer is 2.</li>
+        </ol>
+      </p><br>
+      
+      <div class="button">
+         <button type="button" class="btn text-info mb-4" class="details" data-bs-toggle="modal" data-bs-target="#jModal"><strong>Click here to see the solution!</strong></button>
+      </div>
+      <!-- Modal -->
+  <div class="modal " id="jModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content text-light">
+        <div class="modal-body details-body">
+            <div class="fix">
+                <h1 class="mo-head">J - A Variety of Operations</h1>
+            </div>
+            
+            <div class="mb-4 spacee">
+                    <p class="output">Code:</p>
+                    <div class="code">
+                        <pre>
+                            <code class="language-c">
+#include &#x3C;stdio.h&#x3E;
+int main()
+{
+   int t;
+   scanf("%d", &t);
+   while (t--)
+   {
+      int c, d;
+      scanf("%d%d", &c, &d);
+      if ((c - d) % 2 == 1)
+         printf("-1\n");
+      else if (c == 0 && d == 0)
+         printf("0\n");
+      else if (c == d)
+         printf("1\n");
+      else
+         printf("2\n");
+   }
+}                    </code>
+                        </pre>
+                    </div>
+                    <!-- <p class="output">Explaination:<br>
+                      It is what it is:3</p> -->
+                    
+            </div>  
+            
+            
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-danger close"  data-bs-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div> 
+    <div class="gap"></div>
+    
+    <p class="copyright text-center text-muted">&copy 2023 | F@৩</p>
+
+
+  
+</div>
+
+<script src="prism.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

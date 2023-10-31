@@ -1,0 +1,89 @@
+*{
+    font-family: 'Cascadia Code', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #352F44;
+}
+.icon{
+    display: inline;
+    height: 20px;
+    
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 25px;
+    
+}
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fix{
+    width: 100%;
+    background: #352F44;
+    top: 0;
+    left: 0;
+    position: fixed;
+    
+}
+.box{
+    background: #5C5470;
+    height: auto;
+    width: 100%;
+    
+}
+.button{
+    font-size: 20px;
+    text-align: center;
+}
+.close{
+    width: 80px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.details-body{
+    background: #352F44;
+}
+
+.mo-head{
+    margin-top: 15px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.code{
+    background: #343A40;
+    border-right: 4px solid #352F44;
+    border-left: 4px solid #352F44;
+}
+.output{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.headline{
+    padding: 20px;
+}
+.gap{
+    height: 40px;
+    background: #352F44;
+}
+p{
+    color: #FAF0E6;
+}
+h4{
+    color: #d1634b;
+}
+h1{
+    color: #FAF0E6;
+}
+.details{
+    color: #343A40;
+}
+.spacee{
+    margin-top: 40px;
+}
