@@ -505,7 +505,7 @@ int main()
                         </pre>
                     </div>
                     <p class="output">Explaination:<br>
-                      Here, <span class="text-success">1+log10(n)</span> is the shortcut formula to get length of number of digits of a number. </p>
+                      Here, <span class="text-success">1+log10(n)</span> is the shortcut formula to get length or number of digits of a number. </p>
                     
             </div>  
             
@@ -585,7 +585,7 @@ int main()
       <p class="text-left">
         If you closely observe the problem, you will identify four conditions:
         <ol>
-          <li>If 'c - d' is even, the output will be -1.</li>
+          <li>If 'c - d' is'nt even, the output will be -1.</li>
           <li>If 'c' and 'd' are both equal to 0, the answer is 0.</li>
           <li>If 'c' is equal to 'd,' the answer is 1.</li>
           <li>Otherwise, the answer is 2.</li>
@@ -618,7 +618,7 @@ int main()
    {
       int c, d;
       scanf("%d%d", &c, &d);
-      if ((c - d) % 2 == 1)
+      if ((c - d) % 2 != 0)
          printf("-1\n");
       else if (c == 0 && d == 0)
          printf("0\n");
